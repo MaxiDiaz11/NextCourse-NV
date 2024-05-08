@@ -1,5 +1,20 @@
+import { WidgetsGrid } from "@/app/components";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dashboard",
+  description: "Admin dashboard",
+};
+
 const MainPage = () => {
-  return <div>MainPage</div>;
+  return (
+    <div className="text-black p-2">
+      <h1 className="mt-2 text-3xl">Dashboard</h1>
+      <span className="text-xl">Información general</span>
+
+      <WidgetsGrid />
+    </div>
+  );
 };
 
 export default MainPage;
